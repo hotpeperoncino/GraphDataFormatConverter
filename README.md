@@ -2,8 +2,8 @@
 
 Command
 
-conv -f from -t to inputfile outputfile
-acceptable format is as from: edge/edge2/dimacs/adj, as to:edge
+    conv -f from -t to inputfile outputfile
+    acceptable format is as from: edge/edge2/dimacs/adj, as to:edge
 
 
 Background
