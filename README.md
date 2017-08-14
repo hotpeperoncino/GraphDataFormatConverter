@@ -1,5 +1,12 @@
 # Graph Data Format Converter
 
+Command
+
+    conv -f from -t to inputfile outputfile
+    acceptable format is as from: edge/edge2/dimacs/adj, as to:edge
+
+
+Background
 
 There are several formats to represent graph. There is no kitchensink converter supporting translation vise versa.
 Don't invent new one please.
