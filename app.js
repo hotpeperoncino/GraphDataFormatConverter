@@ -3,7 +3,7 @@ var async = require('async');
 function help()
 {
     console.log("graphconv -f <from> -t <to> inputfile outputfile");
-    console.log("acceptable format is as <from>: edge/edge2/dimacs/adj,as <to>:edge");
+    console.log("acceptable format is as <from>: edge/edge2/dimacs/adj,as <to>:edge/edge2");
 }
 var options = cli.parse({
     ifmt: ['f', 'input format', 'string'],
@@ -38,6 +38,8 @@ cli.main(function (args, options) {
 
     if (options.ofmt == "edge") {
 	writer = require('./edgereader');
+    } else if (options.ofmt == "edge2") {
+	writer = require('./edge2reader');
     } else {
 	writer = {write: function(filename, g, cb) { cb("error unknown write format"); } };
     }
