@@ -1,3 +1,22 @@
+var fs = require('fs');
+
+function edgewrite(outputfile, g, cb) {
+    var data = "";
+    var i = 0;
+
+    data += "" + g.num_vertices + " " + g.num_edges + "\n";
+    while (i < g.adj_begin.length) {
+	var pos = g.adj_begin[i];
+	var j = 0;
+	while (j < g.adj_length[i]) {
+	    data += "" + i + " " + g.adj_list[pos+j] + "\n";
+	    j++;
+	}
+	i++;
+    }
+    fs.writeFile(outputfile,data,function(){cb(null);})
+}
+
 function edgeread(inputfile, cb) {
 
     var linenumber = 0;
@@ -141,3 +160,4 @@ function edgeread(inputfile, cb) {
 }
 
 module.exports.read = edgeread;
+module.exports.write = edgewrite;
