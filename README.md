@@ -2,8 +2,16 @@
 
 Command
 
-    conv -f from -t to inputfile outputfile
+    node app.js -f from -t to inputfile outputfile
     acceptable format is as from: edge/edge2/dimacs/adj, as to:edge
+
+    example:
+        shell script conv.sh usage is like following:
+            conv.sh inputfile outputfile
+        conv.sh is example shell script for converting from adj to edge. There are many options for node to increase
+        memory availability of node.
+        On intel i5 PC with 32G bytes memory equipped, 
+        700Mbytes adj file can be converted to edge file in 5 minutes, using about 22G bytes memory.
 
 
 Background
