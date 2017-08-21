@@ -28,6 +28,8 @@ Text Format
        each lines have: from to
        
 4. EDEGS2:
+
+```
        firstline:  edge-count
        after: from to
        OR
@@ -35,7 +37,7 @@ Text Format
        following each lines have: from to
       
        vertex id starts with 0 or 1
-      
+```      
        As cost representation, each lines might have cost as third parameter;
        
       
@@ -47,13 +49,14 @@ Text Format
 9. DCSR:
 10. PAWAN:
        https://github.com/pathscale/rodinia/tree/master/cuda/bfs
-       
+
+```
        first line: node-count
        the line: from zero count upto node-count: start number-of-edges-each-node
        source-id
        length-of-edges-list
        the line: from zero count upto length-of-edges-list: edge cost
-
+```
 
 
 
