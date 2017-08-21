@@ -45,6 +45,14 @@ Text Format
        http://prolland.free.fr/works/research/dsat/dimacs.html
 8. BSMR: Bitmap-based sparse matrix representation:
 9. DCSR:
+10. PAWAN:
+       https://github.com/pathscale/rodinia/tree/master/cuda/bfs
+       
+       first line: node-count
+       the line: from zero count upto node-count: start number-of-edges-each-node
+       source-id
+       length-of-edges-list
+       the line: from zero count upto length-of-edges-list: edge cost
 
 
 
