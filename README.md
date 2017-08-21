@@ -19,6 +19,9 @@ Background
 There are several formats to represent graph. There is no kitchensink converter supporting translation vise versa.
 Don't invent new one please.
 
+if POC is proved, this program should be rewritten with more memory efficient language like C.
+
+
 Text Format
 
 1. CSR: Compressed Sparse Row
@@ -63,4 +66,6 @@ Text Format
 References
 
     https://link.springer.com/article/10.1007/s41019-016-0024-y
+
+
 
